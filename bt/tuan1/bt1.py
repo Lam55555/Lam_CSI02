@@ -24,35 +24,35 @@
 
 
 # Bài 3
-# class Rectangle:
-#     def __init__(self, width, height):
-#         self.width = width
-#         self.height = height
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
     
-#     def perimeter(self):
-#         return 2 * (self.width + self.height)
+    def perimeter(self):
+        return 2 * (self.width + self.height)
     
-#     def area(self):
-#         return self.width * self.height
+    def area(self):
+        return self.width * self.height
 
-# class Square(Rectangle):
-#     def __init__(self, side):
-#         super().__init__(side, side)
+class Square(Rectangle):
+    def __init__(self, side):
+        super().__init__(side, side)
 
-# def shapes_calculator():
-#     a = float(input("Enter side of square (a): "))
-#     b = float(input("Enter width of rectangle (b): "))
-#     c = float(input("Enter height of rectangle (c): "))
+def shapes_calculator():
+    a = float(input("Enter side of square (a): "))
+    b = float(input("Enter width of rectangle (b): "))
+    c = float(input("Enter height of rectangle (c): "))
 
-#     square = Square(a)
-#     rectangle = Rectangle(b, c)
+    square = Square(a)
+    rectangle = Rectangle(b, c)
 
-#     print(f"Square Perimeter: {square.perimeter()}")
-#     print(f"Square Area: {square.area()}")
-#     print(f"Rectangle Perimeter: {rectangle.perimeter()}")
-#     print(f"Rectangle Area: {rectangle.area()}")
+    print(f"Square Perimeter: {square.perimeter()}")
+    print(f"Square Area: {square.area()}")
+    print(f"Rectangle Perimeter: {rectangle.perimeter()}")
+    print(f"Rectangle Area: {rectangle.area()}")
 
-# shapes_calculator()
+shapes_calculator()
 
 
 #Bài 4
